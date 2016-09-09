@@ -1,7 +1,7 @@
 .text       # Define o início do Text Segment
 .globl main # Define início do código do usuário
 
-main:                     # Label que define do código do usuário
+main:                 # Label que define do código do usuário
 	add $s0,$zero,$gp # Copia o valor de $gp para $s0
 	lbu $t0, 0($s0)   # Copia o byte da posição de memória [$s0+0] p/ $t0
 	lbu $t1, 1($s0)   # Copia o byte da posição de memória [$s0+1] p/ $t1
